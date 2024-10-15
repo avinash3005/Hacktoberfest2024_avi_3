@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo.JPG" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Rohan Tyagi</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:tyagirohan.142@gmail.com" class="contact-link">tyagirohan.142@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 7533804014</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-03-21">March 21, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>U.P., India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rohan-tyagi-333675202/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Tyagirohan" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research Papers</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+          I am Rohan Tyagi, a passionate and results-driven software developer with a solid foundation in computer science 
+          and a keen interest in machine learning and data analysis. With a B.Tech in Computer Science and Engineering, 
+          I have honed my skills through hands-on experience and diverse projects.
+
+          </p>
+
+          <p>
+          In addition to my technical skills, I am a strong communicator and team player with a proven track record in leadership,
+          problem-solving, and time management.
+          <br>With a commitment to innovation and a passion for creating impactful solutions, I am eager to contribute my knowledge 
+          and skills to exciting projects that push the boundaries of technology.
+            
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Advancing R&D</h4>
+
+                <p class="service-item-text">
+                  Pioneering next-gen semiconductor technologies through innovative solutions and cutting-edge research.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Building Comprehensive QoR Tools</h4>
+
+                <p class="service-item-text">
+                  Enhancing design processes with tools that provide in-depth Quality of Results analysis.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/books.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Continuous Learning and Certification</h4>
+
+                <p class="service-item-text">
+                  Staying ahead of the curve by continuously expanding my knowledge in emerging technologies.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/knowledge.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mentoring and Knowledge Sharing</h4>
+
+                <p class="service-item-text">
+                  Empowering others by sharing insights, guiding junior engineers, and fostering a collaborative environment.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science and Engineering</h4>
+              <span>ABES Engineering College</span>
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                Relevant courses included Data Structures and Algorithms, DBMS, Computer Networking, Compiler Design,
+                Machine Learning.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intermediate</h4>
+              <span>Saraswati Bal Mandir Sr. Sec. School</span>
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text">
+                Key Subjects: Physics, Chemistry, Maths, Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <span>Saraswati Bal Mandir Sr. Sec. School</span>
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                Key Subjects: Science, Maths, Information Technology, English
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">R&D Engineer</h4>
+              <span>Synopsys, Bangalore, India</span>
+              <span>August 2024 – Present</span>
+
+              <p class="timeline-text">
+                - Leading and contributing to critical R&D projects aimed at advancing semiconductor design and verification technologies.
+                <br>- Fixing Non-Determinism and Memory Leak issues
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graduate Engineer Trainee</h4>
+              <span>Synopsys, Bangalore, India</span>
+              <span>August 2023 — July 2024</span>
+
+              <p class="timeline-text">
+                Contributed to the design and development of the 3DQoR, enhancing analysis accuarcy and efficiency.
+                <br>Implemented advamced visualization features for intermediate flow step comparison and multi-design views.
+                <br> Fixed some of the Meory leak issues and internal stars
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C, C++</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Structure and Algorithms</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Leardership</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Problem-Solving</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Teamwork</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://tyagirohan.github.io/yoga-sync/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/blog-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Yoga Sync</h3>
+
+                <p class="project-category">Web Development, Deep Learning, Machine learning</p>
+                <p class="project-subcategory"> Human Pose Recognition System</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/blog-2.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AgroShield</h3>
+
+                <p class="project-category">Machine Learning</p>
+                <p class="project-subcategory"> Disease Prediction in plants</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/Tyagirohan/sms-spam-classifier">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sms.jfif" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SecureSMS</h3>
+
+                <p class="project-category">Machine Learning</p>
+                <p class="project-subcategory">SMS Spam Classifier</p>
+
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Research
+      -->
+
+      <article class="research papers" data-page="research papers">
+
+        <header>
+          <h2 class="h2 article-title"></h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10593008/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Research Paper</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-07-23">Jul 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Technological Insights into Yoga Posture Recognition: A State-of-the-Art Review</h3>
+
+                  <p class="blog-text">
+                    This research bridges traditional yoga with modern technology, leveraging deep learning models to provide real-time feedback for self-guided practitioners. 
+                    It offers a comprehensive framework for accurate pose recognition, enhancing the digital yoga experience.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10141357/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Research Paper</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-06-07">Jun 07, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Disease Prediction in Plants: using new Era Technologies</h3>
+
+                  <p class="blog-text">
+                    This study harnesses Machine Learning algorithms to accurately detect plant leaf diseases, with the Random Forest algorithm achieving the highest accuracy of 95%.
+                     It offers a cost-effective and efficient solution for small farmers.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item">
+              <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJDATS.2023.132565">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Research Paper</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-07-25">Jul 25, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Analysis of PCS-QoL to investigate the holistic health for sustainable way of living in smart cities of 21st century</h3>
+
+                  <p class="blog-text">
+                    Analyzing the Quality of Life (QoL) in smart cities, this research uses SF-36 questionnaires and Python libraries to predict wellness trends across diverse demographics, providing a holistic view of sustainable living.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://link.springer.com/chapter/10.1007/978-981-19-6068-0_27">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jfif" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Research Paper</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-11-23">Nov 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Examining the AQI with Effect of Agnihotra in NCR Region: Extracting Knowledge for Sustainable Society and Holistic Development with Healthcare 5.0
+                  </h3>
+
+                  <p class="blog-text">
+                    Through the performance of Yajna and chanting of Mantras, this research demonstrates a significant reduction in hazardous air pollutants like PM2.5 and PM10, highlighting ancient practices as potential solutions to modern air pollution challenges.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31102.09279893514!2d77.66567522670508!3d12.987094239074853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae116dbf7e22e5%3A0xfd3df3299cd59775!2sMahadevapura%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sbd!4v1724587182108!5m2!1sen!2sbd" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
