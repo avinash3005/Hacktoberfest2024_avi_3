@@ -1,0 +1,172 @@
+Rohan - Personal Portfolio
+
+# sidebar
+
+alt = Rohan Tyagi
+Rohan Tyagi
+Software Engineer
+
+Show Contacts
+
+Email
+tyagirohan.142@gmail.com
+
+Phone
++91 7533804014
+
+Birthday
+March 21, 2003
+
+Location
+Uttar Pradesh, India
+
+# navbar
+
+About
+Resume
+Projects
+Research Papers
+Contact
+
+# about
+
+About me
+
+I am Rohan Tyagi, a passionate and results-driven software developer with a solid foundation in computer science and a keen interest in machine learning and data analysis. With a B.Tech in Computer Science and Engineering,   I have honed my skills through hands-on experience and diverse projects.
+
+In addition to my technical skills, I am a strong communicator and team player with a proven track record in leadership, problem-solving, and time management.
+With a commitment to innovation and a passion for creating impactful solutions, I am eager to contribute my knowledge and skills to exciting projects that push the boundaries of technology.
+
+## service
+
+What i'm doing
+
+alt = design icon
+Advancing R&D
+Pioneering next-gen semiconductor technologies through innovative solutions and cutting-edge research.
+
+alt = Web development icon
+Web development icon
+Building Comprehensive QoR Tools
+Enhancing design processes with tools that provide in-depth Quality of Results analysis.
+
+alt = books icon
+Continuous Learning and Certification
+Staying ahead of the curve by continuously expanding my knowledge in emerging technologies.
+
+alt = Mentoring icon
+Mentoring and Knowledge Sharing
+Empowering others by sharing insights, guiding junior engineers, and fostering a collaborative environment.
+
+
+
+
+# resume
+
+Resume
+
+Education
+
+Bachelor of Technology in Computer Science and Engineering
+ABES Engineering College
+2020 — 2024
+Relevant courses included Data Structures and Algorithms, DBMS, Computer Networking, Compiler Design, Machine Learning.
+
+Intermediate
+Saraswati Bal Mandir Sr. Sec. School
+2018 — 2019
+Key Subjects: Physics, Chemistry, Maths, Computer Science
+
+High school of art and design
+Saraswati Bal Mandir Sr. Sec. School
+2016 — 2017
+Key Subjects: Science, Maths, Information Technology, Englishte irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+
+Experience
+
+R&D Engineer
+Synopsys, Bangalore, India
+August 2024 – Present
+- Leading and contributing to critical R&D projects aimed at advancing semiconductor design and verification technologies.
+- Fixing Non-Determinism and Memory Leak issues
+
+Graduate Engineer Trainee
+Synopsys, Bangalore, India
+August 2023 — July 2024
+Contributed to the design and development of the 3DQoR, enhancing analysis accuarcy and efficiency.
+Implemented advamced visualization features for intermediate flow step comparison and multi-design views.
+Fixed some of the Meory leak issues and internal stars
+
+My skills
+
+Python
+C, C++
+Data Structure and Algorithms
+Machine Learning
+Leardership
+Problem-Solving
+Teamwork
+
+
+
+# projects
+
+Projects
+
+All
+
+Select category
+
+
+alt = Yoga Sync
+Web Development, Deep Learning, Machine learning
+Human Pose Recognition System
+
+alt = AgroShield
+Machine Learning
+Disease Prediction in plants
+
+alt = SecureSMS
+Machine Learning
+SMS Spam Classifier
+
+
+
+
+# Research Papers
+
+REsearch Papers
+
+alt = Technological Insights into Yoga Posture Recognition: A State-of-the-Art Review
+Research Paper
+Jul 23, 2024
+This research bridges traditional yoga with modern technology, leveraging deep learning models to provide real-time feedback for self-guided practitioners. It offers a comprehensive framework for accurate pose recognition, enhancing the digital yoga experience.
+
+alt = Disease Prediction in Plants: using new Era Technologies
+Research Paper
+Jun 07, 2023
+This study harnesses Machine Learning algorithms to accurately detect plant leaf diseases, with the Random Forest algorithm achieving the highest accuracy of 95%. It offers a cost-effective and efficient solution for small farmers.
+
+alt = Analysis of PCS-QoL to investigate the holistic health for sustainable way of living in smart cities of 21st century
+Research Paper
+Jul 25, 2023
+Analyzing the Quality of Life (QoL) in smart cities, this research uses SF-36 questionnaires and Python libraries to predict wellness trends across diverse demographics, providing a holistic view of sustainable living.
+
+alt = Examining the AQI with Effect of Agnihotra in NCR Region: Extracting Knowledge for Sustainable Society and Holistic Development with Healthcare 5.0
+Research Paper
+Nov 23, 2022
+Through the performance of Yajna and chanting of Mantras, this research demonstrates a significant reduction in hazardous air pollutants like PM2.5 and PM10, highlighting ancient practices as potential solutions to modern air pollution challenges.
+
+
+
+# contact
+
+Contact
+
+Contact Form
+
+Full name
+Email address
+Your Message
+
+Send Message
