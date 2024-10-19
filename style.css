@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 30px 70px;
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 450px; 
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 19px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #878181;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.username {
+    float: right;
+}
+
+.username button {
+    background-color: #f0f4ff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.username button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.hero {
+    height: 90vh; 
+    text-align: center;
+    padding: 9vh 5vw; 
+    background-color: white;
+    overflow:hidden; 
+}
+
+.left-section {
+    display: inline-block;
+    vertical-align:middle;
+    width: 50%;
+    text-align: left;
+    padding-right: 5%;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left-section h2 {
+    color: #007bff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+ 
+
+.left-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.right-section {
+    display: inline-block;
+    vertical-align:middle;
+    width: 45%;
+}
+
+.hero-image {
+    width: 90%;
+    height: auto;
+}
