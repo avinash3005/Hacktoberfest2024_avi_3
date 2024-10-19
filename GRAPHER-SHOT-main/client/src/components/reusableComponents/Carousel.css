@@ -1,0 +1,38 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 calc(100% / 4); /* Updated to match dynamic itemsToShow */
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 358px; /* Maximum height for the image */
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  object-position: center; /* Centers the image if it’s cropped */
+}
+
+/* For mobile view */
+@media (max-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+}

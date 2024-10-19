@@ -1,0 +1,51 @@
+.snake-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: snake-border-animation 2s linear infinite;
+  }
+  
+  @keyframes snake-border-animation {
+    0% {
+      transform: rotate(0deg);
+      border-top-color: white;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    25% {
+      transform: rotate(90deg);
+      border-top-color: transparent;
+      border-right-color: white;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    50% {
+      transform: rotate(180deg);
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: white;
+      border-left-color: transparent;
+    }
+    75% {
+      transform: rotate(270deg);
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: white;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-top-color: white;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  
