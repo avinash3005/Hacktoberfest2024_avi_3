@@ -1,0 +1,157 @@
+import tkinter as tk
+from tkinter import filedialog
+import sqlite3
+import pygame
+
+# Initialize pygame mixer
+pygame.mixer.init()
+
+# Database setup
+conn = sqlite3.connect('music_app.db')
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS songs (
+    id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL,
+    filepath TEXT NOT NULL
+)
+''')
+conn.commit()
+
+# Function to add a song
+def add_song():
+    filepath = filedialog.askopenfilename()
+    if filepath:
+        title = filepath.split('/')[-1]
+        cursor.execute('INSERT INTO songs (title, filepath) VALUES (?, ?)', (title, filepath))
+        conn.commit()
+        load_songs()
+
+# Function to load songs from database
+def load_songs():
+    cursor.execute('SELECT * FROM songs')
+    songs = cursor.fetchall()
+    song_list.delete(0, tk.END)
+    for song in songs:
+        song_list.insert(tk.END, song[1])
+
+# Function to play a selected song
+def play_song():
+    selected_song = song_list.curselection()
+    if selected_song:
+        song_id = song_list.get(selected_song[0])
+        cursor.execute('SELECT filepath FROM songs WHERE title = ?', (song_id,))
+        song = cursor.fetchone()
+        pygame.mixer.music.load(song[0])
+        pygame.mixer.music.play()
+
+# Creating main application window
+app = tk.Tk()
+app.title('Simple Music App')
+
+# Create and pack widgets
+add_button = tk.Button(app, text='Add Song', command=add_song)
+add_button.pack()
+
+song_list = tk.Listbox(app)
+song_list.pack()
+
+play_button = tk.Button(app, text='Play Song', command=play_song)
+play_button.pack()
+
+# Load songs into the listbox
+load_songs()
+
+# Run the application
+app.mainloop()
+
+# Add playlist table
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS playlists (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL
+)
+''')
+
+# Link songs to playlists
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS playlist_songs (
+    id INTEGER PRIMARY KEY,
+    playlist_id INTEGER,
+    song_id INTEGER,
+    FOREIGN KEY (playlist_id) REFERENCES playlists(id),
+    FOREIGN KEY (song_id) REFERENCES songs(id)
+)
+''')
+conn.commit()
+
+
+def create_playlist(name):
+    cursor.execute('INSERT INTO playlists (name) VALUES (?)', (name,))
+    conn.commit()
+
+def add_song_to_playlist(playlist_id, song_id):
+    cursor.execute('INSERT INTO playlist_songs (playlist_id, song_id) VALUES (?, ?)', (playlist_id, song_id))
+    conn.commit()
+
+def get_playlist_songs(playlist_id):
+    cursor.execute('''
+    SELECT songs.title, songs.filepath FROM songs
+    JOIN playlist_songs ON songs.id = playlist_songs.song_id
+    WHERE playlist_songs.playlist_id = ?
+    ''', (playlist_id,))
+    return cursor.fetchall()
+
+# Function to shuffle and play playlist
+def play_playlist(playlist_id):
+    import random
+    songs = get_playlist_songs(playlist_id)
+    random.shuffle(songs)
+    for song in songs:
+        pygame.mixer.music.load(song[1])
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            continue
+
+
+def create_playlist_ui():
+    playlist_name = playlist_entry.get()
+    if playlist_name:
+        create_playlist(playlist_name)
+        load_playlists()
+
+def load_playlists():
+    cursor.execute('SELECT * FROM playlists')
+    playlists = cursor.fetchall()
+    playlist_list.delete(0, tk.END)
+    for playlist in playlists:
+        playlist_list.insert(tk.END, playlist[1])
+
+def add_to_playlist_ui():
+    selected_song = song_list.curselection()
+    selected_playlist = playlist_list.curselection()
+    if selected_song and selected_playlist:
+        song_id = song_list.get(selected_song[0])
+        playlist_id = playlist_list.get(selected_playlist[0])
+        cursor.execute('SELECT id FROM songs WHERE title = ?', (song_id,))
+        song = cursor.fetchone()
+        cursor.execute('SELECT id FROM playlists WHERE name = ?', (playlist_id,))
+        playlist = cursor.fetchone()
+        add_song_to_playlist(playlist[0], song[0])
+
+playlist_entry = tk.Entry(app)
+playlist_entry.pack()
+
+create_playlist_button = tk.Button(app, text='Create Playlist', command=create_playlist_ui)
+create_playlist_button.pack()
+
+playlist_list = tk.Listbox(app)
+playlist_list.pack()
+
+add_to_playlist_button = tk.Button(app, text='Add to Playlist', command=add_to_playlist_ui)
+add_to_playlist_button.pack()
+
+play_playlist_button = tk.Button(app, text='Play Playlist', command=lambda: play_playlist(playlist_list.get(tk.ACTIVE)))
+play_playlist_button.pack()
+
+load_playlists()
