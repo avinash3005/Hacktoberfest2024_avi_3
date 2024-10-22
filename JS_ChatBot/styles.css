@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3vw;
+  font-family: "Epilogue", sans-serif;
+}
+
+html {
+  --scrollbarBG: #fff;
+  --thumbBG: rgb(63, 63, 70);
+}
+
+
+.botbody {
+  background: linear-gradient(-45deg, #AAFF00, #1e3c72, #00d4ff, orange);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  height: auto;
+  width: fit-content;
+  min-width: 35rem;
+  background-color: black;
+  box-shadow: 0vw 0vw 100vw 0vw #555;
+}
+
+.card #botheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  margin: 0 0.8rem;
+}
+
+.card #botheader h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Finger Paint", cursive;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.card #message-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card #message-section {
+  height: 30rem;
+  max-height: 450px;
+  overflow-y: auto;
+  scrollbar-color: black var(--thumbBG);
+}
+
+.card #message-section::-webkit-scrollbar {
+  width: 3px;
+}
+
+.card #message-section::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+}
+
+.card #message-section::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+.card #message-section #bot,
+.card #message-section #user {
+  position: relative;
+  bottom: 0;
+  min-height: 1.2rem;
+  background-color: rgb(63, 63, 70);
+  color: #fff;
+  border-radius: 0 1rem 1rem 1.2rem;
+  margin: 0.8rem 0.4rem 0rem;
+  max-width: 34vw;
+}
+
+.card #message-section #bot {
+  float: left;
+  padding-left: 1.2rem;
+}
+
+.card #message-section #user {
+  border-radius: 1rem 0rem 1rem 1.2rem;
+  background-color: #fff;
+  float: right;
+  padding-right: 1.2rem;
+}
+
+.card #message-section #user #user-response {
+  color: #000000;
+}
+
+.card #message-section .message {
+  color: #000;
+  clear: both;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  padding: 8px;
+  position: relative;
+  margin: 8px 0;
+  max-width: 85%;
+  word-wrap: break-word;
+  z-index: 2;
+}
+
+.card #input-section {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.card #input-section input {
+  display: flex;
+  align-items: center;
+  color: #000;
+  min-width: 0.5rem;
+  outline: none;
+  height: 2rem;
+  max-height: 2rem;
+  max-width: 600px;
+  flex: 1;
+  background-color: rgb(63, 63, 70);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  margin-left: 0.4rem;
+}
+
+.card .send {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 1em;
+  margin-right: 0;
+  padding: 0;
+  position: relative;
+  outline: none;
+}
+
+.circle:hover,
+.circle:active {
+  opacity: 0.7;
+}
+
+.card .send .circle {
+  position: relative;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .send .circle i {
+  font-size: 1.5rem;
+  margin-left: -0.2rem;
+}
+
+.circle {
+  background-color: rgb(57, 57, 150);
+  border-radius: 10px;
+  color: #fff;
+}
+
+input:focus, .circle:focus, .send:focus , button:focus {
+  border: 1px solid white !important;
+  border-radius: 10px;
+  outline: none; 
+}
+
+.quickbtns{
+  margin-left: 1.1rem;
+}
+
+.quickmessage {
+  background-color: rgb(57, 57, 150);
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.typing-animation {
+  animation: typing 2s infinite;
+}
+/* typing animation */
+@keyframes typing {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@media (max-width: 767px) {
+  .card {
+    min-width: 80vw;
+    min-height: 60vh;
+    font-size: 1.2vw;
+  }
+
+  .quickmessage{
+    font-size: 1rem;
+  }
+
+  .card #botheader {
+    font-size: 1.8rem;
+  }
+
+  .card #message-section {
+    height: 50vh;
+  }
+
+  * {
+    font-size: 9px;
+  }
+
+  input {
+    padding: 0.5rem;
+    padding-left: 1.2rem;
+  }
+
+  #bot-response,
+  #user-response,
+  #bot-input {
+    font-size: 11px;
+  }
+
+  .card #message-section::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .card #message-section #bot,
+  .card #message-section #user {
+    max-width: 60vw;
+  }
+  .quickbtns {
+    max-width: 75vw;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .quickbtns{
+    max-width: 600px;
+  }
+
+  #bot-response,
+  #user-response,
+  #bot-input {
+    font-size: 16px;
+  }
+
+  input {
+    padding: 0.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .card .send .circle {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .botbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
