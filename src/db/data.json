@@ -2,12 +2,12 @@
     
   
     {
-        "name": "SaaS for Finance",
-        "category": "saas",
-        "previewUrl": "https://finance-saas-template.netlify.app/",
-        "previewImg":"./assets/images/brand-logos/saasfinance.jpg",
-        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/saas/finance",
-        "tags": ["saas", "finance"]
+        "name": "Spotify Clone",
+        "category": "website",
+        "previewUrl": "http://127.0.0.1:5500/Spotify%20Clone/index.html",
+        "previewImg":"./assets/images/brand-logos/spotify.png",
+        "githubUrl": "https://github.com/ashiii1/Hacktoberfest2024_avi_3/tree/main/Spotify%20Clone",
+        "tags": ["web"]
     },
     {
         "name": "SaaS",
