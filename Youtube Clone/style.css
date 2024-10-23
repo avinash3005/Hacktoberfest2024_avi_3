@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    background: #181818;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2vw;
+
+}
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+    transform: translate(-50%);
+	
+}
+.toggle-btn span:nth-child(1){
+    top:0;
+}
+.toggle-btn span:nth-child(3){
+    top:100%;
+}
+.logo{
+    height: 30px;
+    margin: -5px 30px 0;
+    background: -webkit-linear-gradient(45deg, black, white);
+}
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 60%;
+    height: 35px;
+    display: flex;
+    border: #444;
+}
+.search-bar{
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+    font: 16px;
+    text-transform: capitalize;
+    border-radius:3rem;
+}
+.search-btn{
+    width: 10%;
+    height: 100%;
+    background: #181818;
+    border: 0px solid #fff;
+    padding: 5px 0;
+    border-left: none;
+    margin: 0;
+}
+.search-btn i{
+    height: 100%;
+    color:white;
+}
+.mic-btn{
+    width: 10%;
+    height: 100%;
+    background: #181818;
+    border: 0px solid #fff;
+    padding: 5px 0;
+    border-left: none;
+    margin: 0;
+}
+.mic-btn img{
+    height: 100%;
+
+}
+.options{
+    height: 35px;
+    display: flex;
+    border: #444;
+    margin-left: auto;
+    align-items: center;
+}
+.options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side-bar{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    height: calc(100vh - 60px);
+    background: #181818;
+    padding-right: 10px;
+    overflow:auto;
+    scrollbar-width:thin;
+}
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.links img{
+    height: 25px;
+    object-fit: cover; 
+    margin-right: 20px;
+}
+.links:hover,
+.links.active{
+    background: rgba(0, 0, 0, 0.1);
+}
+.seperator{
+    border-bottom: 1px solid (0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #181818;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.filters::-webkit-scrollbar{
+    display: none;
+}
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+    cursor: pointer;
+}
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.video{
+    height: auto;
+    min-height: 250px;
+}
+.thumbnail{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.title{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color:white;
+}
+.channel-name{
+    font-size: 14px;
+    margin: 0;
+    color: #979797;
+}
+i{
+color:grey;
+margin-right:5px;
+}
