@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Pages</title>
+    <meta name="description" content="Build beautiful landing pages fast and efficiently using landing page templates">
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20220416/ourmid/pngtree-a-letter-logo-design-template-png-image_4544879.png" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Landing page templates" />
+    <meta property="og:description" content="Free and open-source landing pages for your next project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/825783686/4bc61d55-50bf-470a-866a-2b93d1c1fa3a" />
+  
+
+    <!-- <link rel="stylesheet" href="css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2H03GYVB3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z2H03GYVB3');
+    </script>
+
+</head>
+<body class="tw-min-h-[100vh] tw-bg-[#fff] tw-flex tw-flex-col">
+    
+    <div class="tw-fixed tw-top-5 tw-left-[50%] tw-translate-x-[-50%] tw-z-40 tw-rounded-md
+                tw-max-w-[350px] tw-h-fit tw-p-2 tw-px-4 tw-bg-blue-500 tw-text-white
+                tw-flex tw-place-items-center tw-gap-2 tw-hidden
+                "
+                id="toast-alert"
+                >
+        <span id="alert-message"></span>
+        <button title="close" class="tw-h-full tw-w-[30px] tw-text-xl"  onclick="hideAlert()">
+            <i class="bi bi-x"></i>
+        </button>
+    </div>
+
+    <!-- <header class="tw-flex tw-w-full  tw-z-20
+                    tw-h-[60px]  
+                    lg:tw-justify-around
+                    tw-absolute tw-top-0 tw-px-[5%]
+                    max-lg:tw-px-4
+                    max-lg:tw-mr-auto
+                    tw-bg-opacity-0
+                    ">
+        <a class="tw-w-[50px] tw-h-[50px] tw-p-[4px]" href="">
+            <img src="./assets/Hacktoberfest-2024.png" 
+                  alt="logo" class="tw-w-full tw-h-full tw-object">
+        </a>
+        <div class="collapsible-header animated-collapse  max-lg:tw-shadow-md"
+                    id="collapsed-header-items"
+                    >
+            
+            
+        </div>
+        <button class="tw-absolute tw-text-black tw-z-50 
+                        tw-right-3
+                        tw-top-3
+                        tw-text-3xl  bi bi-list lg:tw-hidden"  
+                onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
+        </button>
+    </header> -->
+
+    <section class="tw-w-full tw-min-h-[40vh] tw-max-w-[100vw]
+                        max-md:tw-mt-[50px]
+                        max-lg:tw-p-4 
+                        tw-flex tw-flex-col tw-overflow-hidden tw-relative"
+                        >
+            
+        <div class="tw-w-full tw-h-full tw-p-[5%]
+                    lg:tw-place-content-center
+                    tw-gap-6 
+                    tw-flex max-lg:tw-flex-col">
+
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-mt-8">
+                <h1 class="tw-text-3xl max-lg:tw-text-4xl tw-font-semibold 
+                            tw-leading-[20px] tw-text-center
+                            max-md:tw-leading-snug " 
+                            >
+                    <span>
+HacktoberFest-2024 Contributions
+                    </span>
+                    <br>
+                   
+                </h1>  
+                Add your project to this Hacktoberfest repo, and get your PR merged to showcase your work! Share your GitHub link, live demo, and project image to inspire developers worldwide. Let's build together and make this Hacktoberfest memorable!
+                <div class="tw-mt-4 tw-flex 
+                            tw-overflow-hidden tw-gap-4 
+                            tw-p-2 tw-w-full tw-place-content-center
+                            tw-place-items-center ">
+                    
+                    <input type="text" name="" 
+                            class="input !tw-outline-none 
+                                    !tw-min-w-[60%]
+                                    !tw-border-transparent
+                                    tw-shadow-[0_0px_10px_rgba(0,0,0,0.25)]
+                                    active:!tw-border-l-fuchsia-950
+                                    focus:!tw-border-l-pink-700
+                                    " 
+                            placeholder="search Projects"
+                            onchange="onSearch()"
+                            oninput="onSearch()"
+                            id="search-input">
+
+                    <button class="btn  
+                                tw-duration-[0.3s]
+                                hover:tw-scale-x-[1.03]
+                                tw-transition-transform
+                                !tw-shadow-xl
+                                "
+                                title="search"
+                                onclick="onSearch()"
+                                >
+                        <i class="bi bi-search"></i>
+                    </button>  
+                  
+                </div>
+                <!-- <div class="tw-mt-4 tw-flex tw-whitespace-nowrap tw-gap-2 tw-max-w-[700px] lg:tw-flex-wrap max-md:tw-max-w-[100vw] 
+                            tw-overflow-x-auto tw-p-1">
+                    <button class="tw-text-base tw-rounded-full tw-p-[2px] tw-px-2 
+                                    tw-text-primary  tw-bg-[#fff] tw-border-2 
+                                    tw-border-primary
+                                    tw-duration-[0.3s]
+                                    tw-transition-colors
+                                    hover:tw-bg-primary
+                                    hover:tw-text-white
+                                    "
+                                    onclick="updateSearchTerm('SaaS')"
+                                    >
+                        SaaS
+                    </button>
+                  
+                   
+                    <button class="tw-text-base tw-rounded-full tw-p-[2px] tw-px-2 
+                                    tw-text-primary tw-bg-[#fff] tw-border-2 tw-border-primary
+                                    tw-duration-[0.3s]
+                                    tw-transition-colors
+                                    hover:tw-bg-primary
+                                    hover:tw-text-white
+                                    "
+                                    onclick="updateSearchTerm('portfolio')"
+                                    >
+                        Portfolio
+                    </button>
+                    <button class="tw-text-base tw-rounded-full tw-p-[2px] tw-px-2 
+                                    tw-text-primary tw-bg-[#fff] tw-border-2 tw-border-primary
+                                    tw-duration-[0.3s]
+                                    tw-transition-colors
+                                    hover:tw-bg-primary
+                                    hover:tw-text-white
+                                    "
+                                    onclick="updateSearchTerm('restaurant')"
+                                    >
+                        Restaurant
+                    </button>
+                   
+                    
+                    <button class="tw-text-base tw-rounded-full tw-p-[2px] tw-px-2 
+                                    tw-text-primary tw-bg-[#fff] tw-border-2 tw-border-primary
+                                    tw-duration-[0.3s]
+                                    tw-transition-colors
+                                    hover:tw-bg-primary
+                                    hover:tw-text-white
+                                    "
+                                    onclick="updateSearchTerm('others')"
+                                    >
+                        Others
+                    </button>
+                </div> -->
+
+             
+
+            </div>
+            
+        </div>
+    
+    </section>
+
+    <section class="tw-w-full  tw-max-w-[100vw]
+                    tw-flex tw-flex-col tw-overflow-hidden tw-relative 
+                    tw-place-items-center
+                    tw-min-h-[60vh]
+                    tw-p-6
+                    "
+                    >
+
+        <div class="tw-flex tw-flex-wrap tw-gap-12 tw-w-full tw-h-full 
+                    tw-place-content-center" id="template-data-container">
+
+            <div class="template-card" onclick="showPreviewModal(1)">
+
+                <div  class="template-preview">
+                    <img src="./assets/template-preview/apps/chat-origin.png" 
+                        alt="" class="tw-w-full tw-h-full tw-object-contain" 
+                        srcset="">
+                </div>
+                <div class="template-footer tw-w-full" >
+                    <h2 class="tw-text-xl tw-font-medium">Chat Origin - App template</h2>
+
+                    <div class="tw-flex tw-mt-5 tw-justify-between">
+                        <a href="https://github.com/PaulleDemon/landing-pages/tree/main/src/apps/chatorigin" target="_blank" rel="noopener noreferrer" class="tw-text-2xl">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://chatorigin.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                                            class="tw-rounded-full tw-flex tw-border-black tw-border-[1px] 
+                                                    tw-w-[30px] tw-h-[30px] tw-place-content-center
+                                                    tw-text-lg 
+                                                    ">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" onclick="showPreviewModal(2)">
+
+                <div  class="template-preview">
+                    <img src="./assets/template-preview/apps/chat-origin.png" 
+                        alt="" class="tw-w-full tw-h-full tw-object-contain" 
+                        srcset="">
+                </div>
+                <div class="template-footer tw-w-full" >
+                    <h2 class="tw-text-xl tw-font-medium">SaaS template</h2>
+
+                    <div class="tw-flex tw-mt-5 tw-justify-between">
+                        <a href="https://github.com/PaulleDemon/landing-pages/tree/main/src/apps/chatorigin" target="_blank" rel="noopener noreferrer" class="tw-text-2xl">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://chatorigin.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                                            class="tw-rounded-full tw-flex tw-border-black tw-border-[1px] 
+                                                    tw-w-[30px] tw-h-[30px] tw-place-content-center
+                                                    tw-text-lg 
+                                                    ">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div>Loading please wait...</div>
+
+        </div>
+        <div class="tw-text-xl tw-mt-4 tw-hidden" id="search-404">
+            <span>oops! can't find that template, 
+                <a href="https://github.com/PaulleDemon/landing-pages/issues/new/choose" class="tw-underline tw-underline-offset-2 hover:tw-text-primary">request a new one</a> or 
+                    search another term</span>
+        </div>
+    </section>
+  
+    <!-- the preview modal -->
+    <div class="tw-fixed tw-top-[50%] tw-translate-y-[-50%] tw-left-[50%] tw-translate-x-[-50%]
+            tw-w-full tw-max-w-[800px] tw-h-[600px] tw-border tw-bg-white tw-transition-transform
+            tw-duration-[0.3s] tw-rounded-lg tw-shadow-md tw-p-3 tw-scale-0" id="preview-modal">
+
+        <div class="tw-relative tw-w-full">
+            <button id="close-modal" title="close" type="button" 
+                    onclick="hidePreviewModal()"
+                    class="tw-bg-white tw-w-[30px] tw-h-[30px] tw-absolute tw-right-5 tw-top-3 tw-rounded-full tw-text-2xl tw-shadow-md">
+                <i class="bi bi-x-circle-fill"></i>
+            </button>
+        </div>
+
+        <div class="tw-w-full tw-h-[400px] tw-bg-[#b3b3b38b] tw-p-2 tw-rounded-lg">
+            <img src="" 
+                class="tw-w-full tw-h-full tw-object-contain" id="preview-img">
+        </div>
+
+        <div class="tw-flex tw-flex-col tw-gap-3 tw-p-4">
+            <h3 class="tw-text-2xl tw-font-medium" id="template-name">Chat app</h3>
+            <div class="tw-flex tw-w-full tw-place-items-center">
+
+                <a href="" id="modal-source-code" target="_blank" rel="noreferrer noopener">
+                    <i class="bi bi-github tw-text-2xl"></i>
+                </a>
+
+                <a href="" id="preview-url" target="_blank" rel="noreferrer noopener"
+                        class="tw-ml-auto tw-p-2 tw-px-4 tw-border-[1px] tw-rounded-full 
+                                        tw-border-black hover:tw-bg-black hover:!tw-text-white 
+                                        tw-duration-[0.3s] w-transition-colors ">
+                    <span>
+                        Live preview
+                        <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                </a>
+
+            </div>
+            <button class="btn tw-ml-auto" id="download-folder">
+                <span>
+                    Download
+                    <i class="bi bi-download"></i>
+                </span>
+            </button>
+        
+        </div>
+    </div>
+
+   
+
+
+    <div class="tw-fixed tw-scale-0 tw-flex tw-bg-[#0c0c0c94] tw-duration-[0.3s] tw-transition-transform tw-place-content-center tw-place-items-center tw-top-0 tw-w-full tw-h-full tw-z-50" id="template-modal-container">
+        <div class="tw-max-w-[650px] tw-flex tw-flex-col tw-m-2 tw-min-h-[200px] tw-h-fit tw-gap-5 tw-bg-gray-100 tw-rounded-lg tw-shadow-xl tw-p-6"
+                    id="template-request-modal">
+            
+            <div class="tw-relative tw-text-xl tw-flex tw-place-content-end">
+                <button title="close" onclick="closeTemplateRequestModal()">
+                    <i class="bi bi-x-circle-fill"></i>
+                </button>
+            </div>
+
+            <div class="tw-text-xl max-md:tw-text-xl tw-text-center">
+                Would you like to make a generic request or a custom request?
+            </div>
+
+            <div class="tw-mt-6 tw-flex tw-justify-between tw-gap-2 tw-text-base max-md:tw-text-sm">
+
+                <a href="https://github.com/PaulleDemon/awesome-landing-pages/issues/new/choose" rel="noreferrer noopener" class="btn !tw-bg-transparent !tw-text-primary !tw-border-primary !tw-border-solid !tw-border-[1px]">
+                    Generic request
+                </a>
+
+                <button data-tally-open="woO0Kx" data-tally-layout="modal" data-tally-width="400" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="2000" class="btn">
+                    Custom request
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+   
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js" integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./scripts/download-folder.js"></script>
+<script src="./scripts/utils.js"></script>
+<script src="./index.js"></script>
+
+</html>

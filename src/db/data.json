@@ -1,0 +1,75 @@
+[
+    
+  
+    {
+        "name": "SaaS for Finance",
+        "category": "saas",
+        "previewUrl": "https://finance-saas-template.netlify.app/",
+        "previewImg":"./assets/images/brand-logos/saasfinance.jpg",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/saas/finance",
+        "tags": ["saas", "finance"]
+    },
+    {
+        "name": "SaaS",
+        "category": "saas",
+        "previewUrl": "https://celestialsaas.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/saas/CelestialSaaS",
+        "previewImg":"./assets/images/brand-logos/saascelestial.jpg",
+        "tags": ["saas", "dashboard", "light theme"]
+    },
+    {
+        "name": "SaaS Dark Mode",
+        "category": "saas",
+        "previewUrl": "https://saasy-dark.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/saas/SaaSyDark",
+        "previewImg":"./assets/images/brand-logos/darksaas.png",
+        "tags": ["saas", "landing pages", "dark", "responsive", "dark theme", "animated"]
+    },
+
+    {
+        "name": "AI SaaS",
+        "category": "saas",
+        "previewUrl": "https://ai-code.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/saas/SaaS-AI",
+        "previewImg":"./assets/images/brand-logos/ai saas.jpg",
+        "tags": ["saas", "landing pages", "dark", "responsive", "dark theme", "animated"]
+    },
+   
+    {
+        "name": "Bistro restaurant",
+        "category": "restaurant",
+        "previewUrl": "https://bistro-rest.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/restaurant/bistro",
+        "previewImg":"./assets/images/brand-logos/bistro.png",
+        "tags": ["restaurant", "hotel"]
+    },
+    {
+        "name": "Project africa",
+        "category": "ngo",
+        "previewUrl": "https://project-africa.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/ngo/project-africa",
+        "previewImg":"./assets/images/brand-logos/ngo.jpg",
+        "tags": ["ngo", "non-profit", "charity", "donation"]
+    },
+    
+    {
+        "name": "Brick property",
+        "category": "real-estate",
+        "previewUrl": "https://brickproperty.netlify.app/",
+        "previewImg":"./assets/images/brand-logos/realestate.png",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/realestate/brickproperty",
+        "tags": ["real estate", "estate", "apartments"]
+    },
+    
+  
+   
+    {
+        "name": "Car wash",
+        "category": "others",
+        "previewUrl": "https://supremecarwash.netlify.app/",
+        "githubUrl": "https://github.com/ashiii1/All-Templates/tree/master/src/others/carwash",
+        "previewImg":"./assets/images/brand-logos/car.png",
+        "tags": ["car", "others", "car wash", "wash"]
+    }
+
+]
